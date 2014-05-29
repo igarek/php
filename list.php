@@ -1,6 +1,6 @@
 <?php
 
-mysql_connect("localhost","student2","111");
+mysql_connect("localhost","root","");
 echo "<table border=2>\n";
 echo "<tr><td>surname</td>
             <td>name</td>

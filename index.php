@@ -1,13 +1,13 @@
 <html>
 <head>
-<title>Students</title>
+<title>funshop</title>
 </head>
 <body>
-<h1> Student's table</h1>
+<h1> funshop table</h1>
 <ul>
   <li><a href="create.php">create table in db</a></li>
-  <li><a href="add.php">add student's data</a></li>
-  <li><a href="list.php">list student's data</a></li>
+  <li><a href="add.php">add funshop data</a></li>
+  <li><a href="list.php">list funshop data</a></li>
 </ul>
 </body>
 </html>

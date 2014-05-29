@@ -1,9 +1,9 @@
 <?php
 $id = $_REQUEST['id'];
 
-mysql_connect("localhost","student2","111");
-mysql_query("use students");
-$query = "delete from students where id=$id";
+mysql_connect("localhost","root","");
+mysql_query("use funshop");
+$query = "delete from funshop where id=$id";
 echo "q=$query";
 mysql_query($query);
 

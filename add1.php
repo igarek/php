@@ -1,21 +1,21 @@
 <?php
 $name = $_REQUEST['name'];
-$surname = $_REQUEST['surname'];
-$fathersname = $_REQUEST['fathersname'];
-$age = $_REQUEST['age'];
-$birthday = $_REQUEST['birthday'];
-$sex = $_REQUEST['sex'];
+$brand = $_REQUEST['brand'];
+$producer = $_REQUEST['producer'];
+$quantity = $_REQUEST['quantity'];
+$cost = $_REQUEST['cost'];
+$whom = $_REQUEST['whom'];
 echo "<p>name=$name</p>";
-echo "<p>surname=$surname</p>";
-echo "<p>fathersname=$fathersname</p>";
-echo "<p>age=$age</p>";
-echo "<p>birthday=$birthday</p>";
-echo "<p>sex=$sex</p>";
+echo "<p>brand=$brand</p>";
+echo "<p>producer=$producer</p>";
+echo "<p>quantity=$quantity</p>";
+echo "<p>cost=$cost</p>";
+echo "<p>whom=$whom</p>";
 
-mysql_connect("localhost","student2","111");
+mysql_connect("localhost","root","");
 mysql_query("use students");
-$query = "insert into students (name,surname,fathersname,age,birthday,sex) 
-	values ('$name', '$surname','$fathersname','$age','$birthday','$sex');";
+$query = "insert into students (name,brand,producer,quantity,cost,whom) 
+	values ('$name', '$brand','$producer','$quantity','$cost','$whom');";
 echo $query;
 mysql_query($query);
 ?>

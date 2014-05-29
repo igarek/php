@@ -1,47 +1,47 @@
 <?php
 $name = $_REQUEST['name'];
-$surname = $_REQUEST['surname'];
-$fathersname = $_REQUEST['fathersname'];
-$age = $_REQUEST['age'];
-$birthday = $_REQUEST['birthday'];
-$sex = $_REQUEST['sex'];
+$brand = $_REQUEST['brand'];
+$producer = $_REQUEST['producer'];
+$quantity = $_REQUEST['quantity'];
+$cost = $_REQUEST['cost'];
+$whom = $_REQUEST['whom'];
 $id = $_REQUEST['id'];
 echo "<p>name=$name</p>";
-echo "<p>surname=$surname</p>";
-echo "<p>fathersname=$fathersname</p>";
-echo "<p>age=$age</p>";
-echo "<p>birthday=$birthday</p>";
-echo "<p>sex=$sex</p>";
+echo "<p>brand=$brand</p>";
+echo "<p>producer=$producer</p>";
+echo "<p>quantity=$quantity</p>";
+echo "<p>cost=$cost</p>";
+echo "<p>whom=$whom</p>";
 
-mysql_connect("localhost","student2","111");
-mysql_query("use students");
-$query = "update students set name='$name' where id=$id";
+mysql_connect("localhost","root","");
+mysql_query("use funshop");
+$query = "update funshop set name='$name' where id=$id";
 echo "q=$query";
 mysql_query($query);
-$query = "update students set surname='$surname' where id=$id";
+$query = "update funshop set brand='$brand' where id=$id";
 mysql_query($query);
 
-mysql_query("use students");
+mysql_query("use funshop");
 echo "q=$query";
-$query = "update students set fathersname='$fathersname' where id=$id";
+$query = "update funshop set producer='$producer' where id=$id";
 mysql_query($query);
 
-mysql_query("use students");
-$query = "update students set age='$age' where id=$id";
-echo "q=$query";
-mysql_query($query);
-
-mysql_query("use students");
-$query = "update students set birthday='$birthday' where id=$id";
+mysql_query("use funshop");
+$query = "update funshop set quantity='$quantity' where id=$id";
 echo "q=$query";
 mysql_query($query);
 
-mysql_query("use students");
-$query = "update students set sex='$sex' where id=$id";
+mysql_query("use funshop");
+$query = "update funshop set cost='$cost' where id=$id";
 echo "q=$query";
 mysql_query($query);
 
-//$query = "update students set (name,surname,fathersname,age,birthday,sex) 
-//	values ('$name', '$surname','$fathersname','$age','$birthday','$sex');";
+mysql_query("use funshop");
+$query = "update funshop set whom='$whom' where id=$id";
+echo "q=$query";
+mysql_query($query);
+
+//$query = "update funshop set (name,brand,producer,quantity,cost,whom) 
+//	values ('$name', '$brand','$producer','$quantity','$cost','$whom');";
 
 ?>

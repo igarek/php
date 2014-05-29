@@ -1,32 +1,32 @@
 <html>
 <head>
-	<title>Add a new student's data</title>
+	<title>Add a new funshop data</title>
 </head>
 <body>
-	<h1> Student's form </h1>
+	<h1> funshop form </h1>
 	<form method="post" action="add1.php">
 		<p>
-		<label> First name:
+		<label> Name:
 			<input type=text name="name">
 		</label>
 		<br>
-		<label> Father's name:
-			<input type=text name="fathersname">
+		<label> Brand:
+			<input type=text name="brand">
 		</label>
 		<br>
-		<label> Last name:
-			<input type=text name="surname">
+		<label> Producer of:
+			<input type=text name="producer">
 		</label>
 		<br>
-		<label> Age:
-			<input type=text name="age">
+		<label> Quantit (for example: 3)
+			<input type=text name="quantit">
 		</label>
 		<br>
-		<label> Birthday (for example: 1987-01-02)
+		<label> Cost (for example: 1300)
 			<input type=text name="birthday">
 		</label>
 		<br>
-		<label> Sex
+		<label> Whom
 			<select name="sex">
 				<option value="m">Male</option>
 				<option value="f">Female</option>

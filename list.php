@@ -2,28 +2,28 @@
 
 mysql_connect("localhost","root","");
 echo "<table border=2>\n";
-echo "<tr><td>surname</td>
-            <td>name</td>
-            <td>fathersname</td>
-            <td>age</td>
-            <td>birthday</td>
-            <td>sex</td>
+echo "<tr><td>name</td> //назва
+            <td>brand</td> //марка
+            <td>producer</td> // производитель
+            <td>quantity</td> //количество
+            <td>cost</td> //стоимость
+            <td>whom</td> //кому
             <td>edit</td>
             <td>delete</td>
             </tr>\n";
-mysql_query("use students");
-$r = mysql_query("select * from students");
+mysql_query("use funshop");
+$r = mysql_query("select * from funshop");
 $n = mysql_num_rows($r);
 for ($i=0;$i<$n;$i++)
 {
 	$f = mysql_fetch_array($r);
 	//var_dump($f);
-    echo "<tr><td>".$f['surname']."</td>
-            <td>".$f['name']."</td>
-            <td>".$f['fathersname']."</td>
-            <td>".$f['age']."</td>
-            <td>".$f['birthday']."</td>
-            <td>".$f['sex']."</td>
+    echo "<tr><td>".$f['name']."</td>
+            <td>".$f['brand']."</td>
+            <td>".$f['producer']."</td>
+            <td>".$f['quantity']."</td>
+            <td>".$f['cost']."</td>
+            <td>".$f['whom']."</td>
             <td><a href='edit.php?id=".$f['id']."'>edit</a></td>
             <td><a href='delete.php?id=".$f['id']."'>delete</a></td>
             </tr>\n";

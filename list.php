@@ -2,12 +2,12 @@
 
 mysql_connect("localhost","root","");
 echo "<table border=2>\n";
-echo "<tr><td>name</td> //назва
-            <td>brand</td> //марка
-            <td>producer</td> // производитель
-            <td>quantity</td> //количество
-            <td>cost</td> //стоимость
-            <td>whom</td> //кому
+echo "<tr><td>name</td> 
+            <td>brand</td> 
+            <td>producer</td> 
+            <td>quantity</td> 
+            <td>cost</td> 
+            <td>whom</td> 
             <td>edit</td>
             <td>delete</td>
             </tr>\n";

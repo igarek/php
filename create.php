@@ -1,7 +1,7 @@
 <?php
 
 
-mysql_connect("localhost","root2","");
+mysql_connect("localhost","root","");
 
 mysql_query("drop database if exists funshop;");
 mysql_query("create database funshop;");

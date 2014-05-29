@@ -13,8 +13,8 @@ echo "<p>cost=$cost</p>";
 echo "<p>whom=$whom</p>";
 
 mysql_connect("localhost","root","");
-mysql_query("use students");
-$query = "insert into students (name,brand,producer,quantity,cost,whom) 
+mysql_query("use funshop");
+$query = "insert into funshop (name,brand,producer,quantity,cost,whom) 
 	values ('$name', '$brand','$producer','$quantity','$cost','$whom');";
 echo $query;
 mysql_query($query);
